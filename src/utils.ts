@@ -1,9 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/ban-types */
 import "dotenv/config";
 import { sign, verify } from "jsonwebtoken";
-
-
 
 export function createJWTToken(payload: any) {
     const { PRIVATE_KEY } = process.env;
